@@ -7,6 +7,9 @@ const config: GatsbyConfig = {
   },
   graphqlTypegen: true,
   plugins: [
+    /**
+     * @see https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx
+     */
     'gatsby-plugin-mdx',
 
     /**
@@ -14,6 +17,9 @@ const config: GatsbyConfig = {
      */
     'gatsby-plugin-postcss',
 
+    /**
+     * @see https://www.gatsbyjs.com/plugins/gatsby-source-filesystem
+     */
     {
       resolve: 'gatsby-source-filesystem',
       options: {
