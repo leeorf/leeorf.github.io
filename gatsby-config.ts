@@ -18,15 +18,29 @@ const config: GatsbyConfig = {
     'gatsby-plugin-postcss',
 
     /**
+     * @see https://www.gatsbyjs.com/plugins/gatsby-plugin-image
+     */
+    'gatsby-plugin-image',
+
+    /**
+     * @see https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp
+     */
+    'gatsby-plugin-sharp',
+
+    /**
+     * @see https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp
+     */
+    'gatsby-transformer-sharp',
+
+    /**
      * @see https://www.gatsbyjs.com/plugins/gatsby-source-filesystem
      */
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'pages',
-        path: './src/pages/',
+        name: 'images',
+        path: `${__dirname}/src/images`,
       },
-      __key: 'pages',
     },
   ],
 };
