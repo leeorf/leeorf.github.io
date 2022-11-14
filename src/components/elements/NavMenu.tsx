@@ -1,8 +1,6 @@
 import React from 'react';
 import { routesList } from '../../constants/routes';
 import { HyperLink } from '../shared/HyperLink';
-import { InteractiveText } from '../shared/InteractiveText';
-import cv from '../../download/gtd.pdf';
 
 export const NavMenu = (): React.ReactElement => {
   return (

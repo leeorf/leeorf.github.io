@@ -11,11 +11,11 @@ type Routes = Record<Slug, Link>;
 
 export const routes: Routes = {
   home: {
-    caption: 'About',
+    caption: 'Sobre',
     url: '/',
   },
   projects: {
-    caption: 'Projects',
+    caption: 'Projetos',
     url: '/projects',
   },
   blog: {
