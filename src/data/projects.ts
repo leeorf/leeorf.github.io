@@ -14,8 +14,8 @@ export const projects: Project[] = [
     cover: {
       srcPath: 'projects/secret-hash/cover.png',
     },
-    startDate: '21/09/2022',
-    endDate: '27/10/2022',
+    startDate: '2022-09-21',
+    endDate: '2022-10-27',
     tags: [
       'Chrome Extension',
       'TypeScript',
