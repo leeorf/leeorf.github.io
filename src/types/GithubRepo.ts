@@ -1,4 +1,4 @@
 export type GithubRepo = {
   owner: string;
-  project: string;
+  name: string;
 };
