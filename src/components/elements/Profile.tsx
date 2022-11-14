@@ -68,7 +68,7 @@ export const Profile = (props: ProfileProps): React.ReactElement => {
   ) : null;
 
   return (
-    <div>
+    <>
       <div className="flex flex-col items-center sm:flex-row mb-12">
         {avatarElement}
         <div className="flex flex-col items-center sm:items-start text-center sm:text-left space-y-3">
@@ -84,7 +84,7 @@ export const Profile = (props: ProfileProps): React.ReactElement => {
       <div>
         <Greeting />
       </div>
-    </div>
+    </>
   );
 };
 
