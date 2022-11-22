@@ -33,6 +33,7 @@ export const FluidImage = (
   return (
     <GatsbyImage
       image={fluidImage}
+      style={{ height: '100%' }}
       alt={image?.caption || ''}
       title={image?.caption || ''}
       imgClassName={imgClassName}

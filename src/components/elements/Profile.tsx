@@ -5,6 +5,7 @@ import { routes } from '../../constants/routes';
 import { Profile as ProfileType } from '../../types/Profile';
 import { Avatar } from '../shared/Avatar';
 import { HyperLink } from '../shared/HyperLink';
+import { InteractiveText } from '../shared/InteractiveText';
 import { SocialLinks } from '../shared/SocialLinks';
 import { Tags } from '../shared/Tags';
 
@@ -90,14 +91,10 @@ export const Profile = (props: ProfileProps): React.ReactElement => {
 
 export const Greeting = (): React.ReactElement => {
   const projectsLinkElement = (
-    <HyperLink link={routes.projects} className="underline font-semibold">
-      projetos
-    </HyperLink>
-  );
-
-  const blogLinkElement = (
-    <HyperLink link={routes.blog} className="underline font-semibold">
-      blog
+    <HyperLink link={routes.projects}>
+      <InteractiveText className="font-bold underline">
+        projetos
+      </InteractiveText>
     </HyperLink>
   );
 
@@ -109,10 +106,9 @@ export const Greeting = (): React.ReactElement => {
       confortáveis para desenvolver), performance e prezo muito por manter uma
       codebase organizada e que seja fácil de manter e evoluir. No meu tempo
       livre (normalmente 2-3 horas pela noite) desenvolvo {projectsLinkElement}{' '}
-      que resolvem problemas reais (meu ou de outras pessoas) e tenho planos de
-      me tonar um contribuidor ativo de projetos open source. Também estou
-      começando um {blogLinkElement} documentando coisas que aprendo e que podem
-      ajudar outras pessoas.
+      que resolvem problemas reais (meu ou de outras pessoas) ou me ajudam a
+      entender conceitos que venho estudando. Também tenho planos de me tonar um
+      contribuidor ativo de projetos open source.
     </p>
   );
 };

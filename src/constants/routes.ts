@@ -20,7 +20,7 @@ export const routes: Routes = {
   },
   blog: {
     caption: 'Blog',
-    url: 'https://leeorf.dev',
+    url: 'https://blog.leeorf.dev',
   },
 };
 

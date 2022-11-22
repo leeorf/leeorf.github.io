@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": false,
   "author": "Leonardo Rodrigues",
+  "description": "My personal website with a list of my projects and blog posts about career, life and web-development.",
   "homepage": "https://leeorf.github.io",
   "license": "MIT",
   "scripts": {
@@ -40,6 +41,7 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-mdx": "^4.3.0",
     "gatsby-plugin-postcss": "^5.24.0",
     "gatsby-plugin-sharp": "^4.24.0",

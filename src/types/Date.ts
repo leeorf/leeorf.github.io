@@ -1,2 +1,2 @@
-// dd-mm-YYYY (i.e 12-11-2022)
+// ISO 8601 format YYYY-mm-dd (i.e 2022-09-21)
 export type DateString = string;

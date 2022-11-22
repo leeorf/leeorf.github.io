@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SocialLink, SocialLinkTypes } from '../../types/SocialLink';
 import { Expander } from './Expander';
 import { HyperLink } from './HyperLink';
+import { InteractiveText } from './InteractiveText';
 
 type SocialLinksProps = {
   links: SocialLink[];
@@ -23,11 +24,13 @@ export const SocialLinks = (props: SocialLinksProps): React.ReactElement => {
 
     if (socialLink.type && socialLink.type in socialLinkIcon) {
       const Icon = socialLinkIcon[socialLink.type];
-      linkIcon = <Icon className="w-6 h-6" />;
+      linkIcon = <Icon className="w-6 h-6 mr-2 mb-2" />;
     }
 
     return (
-      <HyperLink link={socialLink}>{linkIcon || socialLink.url}</HyperLink>
+      <HyperLink link={socialLink}>
+        <InteractiveText>{linkIcon || socialLink.url}</InteractiveText>
+      </HyperLink>
     );
   };
 

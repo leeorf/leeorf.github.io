@@ -8,7 +8,7 @@ type RowProps = {
 };
 
 export const Row = (props: RowProps): React.ReactElement => {
-  const { children, className, responsive = true } = props;
+  const { children, className, responsive = false } = props;
 
   const classes = classNames(className, {
     flex: true,

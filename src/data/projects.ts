@@ -4,12 +4,12 @@ export const projects: Project[] = [
   {
     id: 'secret-hash',
     name: '#️⃣ Secret Hash Chrome Extension',
-    summary: ['Chrome extension to secretly hash text.'],
+    summary: ['Extensão do Chrome para gerar hash a partir de texto.'],
     srcUrl: {
       url: 'https://github.com/leeorf/secret-hash-chrome-extesion',
     },
     demoUrl: {
-      url: '',
+      url: 'https://chrome.google.com/webstore/detail/secret-hash/ibpdnpmcfhoniipkhjflmmaclfedbgcj',
     },
     cover: {
       srcPath: 'projects/secret-hash/cover.png',
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     id: 'leeorf-dev',
     name: '👨🏾‍💻 leeorf.dev',
     summary: [
-      'My personal website with a list of my projects and blog posts about career, life and web-development.',
+      'Meu webiste pessoal com uma lista de projetos e posts sobre carreira, vida e desenvolvimento web e tecnologia.',
     ],
     srcUrl: {
       url: 'https://github.com/leeorf/leeorf.github.io',

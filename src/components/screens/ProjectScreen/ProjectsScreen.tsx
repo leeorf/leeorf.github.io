@@ -15,8 +15,19 @@ export const ProjectsScreen = (
   props: ProjectsScreenProps
 ): React.ReactElement => {
   const { projects } = props;
+  const [filteredProjects, setFilteredProjects] = useState<Project[]>(projects);
 
-  const numOfProjects = projects.length;
+  const handleSort = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const sortBy = event.target.value as SortBy;
+
+    const sortedProjects = [...filteredProjects].sort(
+      projectsSorters[sortBy].sort
+    );
+
+    setFilteredProjects(sortedProjects);
+  };
+
+  const numOfProjects = filteredProjects.length;
 
   return (
     <PageLayout>
@@ -25,7 +36,17 @@ export const ProjectsScreen = (
         <Badge className="ml-3 self-start">{numOfProjects}</Badge>
       </Row>
 
-      <ProjectsList projects={projects} />
+      <div>
+        <select onChange={handleSort}>
+          {Object.keys(SortBy).map(sortOption => (
+            <option key={sortOption} value={sortOption}>
+              {SortBy[sortOption as keyof typeof SortBy]}
+            </option>
+          ))}
+        </select>
+      </div>
+      <hr />
+      <ProjectsList projects={filteredProjects} />
     </PageLayout>
   );
 };
