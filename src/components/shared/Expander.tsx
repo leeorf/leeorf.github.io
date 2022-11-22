@@ -50,7 +50,7 @@ export const Expander = (props: ExpanderProps): React.ReactElement | null => {
   ) : null;
 
   return (
-    <ul className="flex flex-row flex-wrap space-x-2 space-y-2 items-end justify-center sm:justify-start">
+    <ul className="flex flex-row flex-wrap justify-center sm:justify-start">
       {filteredItems}
       {showMoreButton}
     </ul>

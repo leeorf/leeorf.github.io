@@ -1,8 +1,6 @@
 import React from 'react';
-import combinaClassNames from 'classnames';
 import { Link } from 'gatsby';
 import { Link as LinkType } from '../../types/Link';
-import { InteractiveText } from './InteractiveText';
 
 type HyperLinkProps = {
   link: LinkType;
@@ -21,8 +19,6 @@ export const HyperLink = (props: HyperLinkProps): React.ReactElement | null => {
     activeClassName = '',
   } = props;
 
-  const commonClasses = combinaClassNames(className);
-
   if (!link.url) {
     return null;
   }
@@ -34,10 +30,11 @@ export const HyperLink = (props: HyperLinkProps): React.ReactElement | null => {
     <a
       href={link.url}
       title={link.caption}
+      className={className}
       target={!isHash && shouldOpenInNewTab ? '_blank' : '_self'}
       rel="noreferrer"
     >
-      <InteractiveText className={commonClasses}>{children}</InteractiveText>
+      {children}
     </a>
   );
 
@@ -45,10 +42,10 @@ export const HyperLink = (props: HyperLinkProps): React.ReactElement | null => {
     <Link
       to={link.url}
       title={link.caption}
-      className={commonClasses}
       activeClassName={activeClassName}
+      className={className}
     >
-      <InteractiveText className={commonClasses}>{children}</InteractiveText>
+      {children}
     </Link>
   );
 

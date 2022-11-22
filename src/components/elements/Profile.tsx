@@ -1,12 +1,11 @@
 import React from 'react';
 import { FiMonitor, FiMapPin } from 'react-icons/fi';
-import { routes } from '../../constants/routes';
 
 import { Profile as ProfileType } from '../../types/Profile';
 import { Avatar } from '../shared/Avatar';
-import { HyperLink } from '../shared/HyperLink';
 import { SocialLinks } from '../shared/SocialLinks';
 import { Tags } from '../shared/Tags';
+import { Greeting } from './Greeting';
 
 type ProfileProps = {
   profile: ProfileType;
@@ -68,7 +67,7 @@ export const Profile = (props: ProfileProps): React.ReactElement => {
   ) : null;
 
   return (
-    <div>
+    <>
       <div className="flex flex-col items-center sm:flex-row mb-12">
         {avatarElement}
         <div className="flex flex-col items-center sm:items-start text-center sm:text-left space-y-3">
@@ -84,35 +83,6 @@ export const Profile = (props: ProfileProps): React.ReactElement => {
       <div>
         <Greeting />
       </div>
-    </div>
-  );
-};
-
-export const Greeting = (): React.ReactElement => {
-  const projectsLinkElement = (
-    <HyperLink link={routes.projects} className="underline font-semibold">
-      projetos
-    </HyperLink>
-  );
-
-  const blogLinkElement = (
-    <HyperLink link={routes.blog} className="underline font-semibold">
-      blog
-    </HyperLink>
-  );
-
-  return (
-    <p>
-      Olá, me chamo Leo! Um desenvolvedor com um passado de amor e ódio por
-      códigos, mas que hoje ama o que faz. Tenho bastante interesse na parte do
-      front end que lida com automações (deixar os devs do time mais
-      confortáveis para desenvolver), performance e prezo muito por manter uma
-      codebase organizada e que seja fácil de manter e evoluir. No meu tempo
-      livre (normalmente 2-3 horas pela noite) desenvolvo {projectsLinkElement}{' '}
-      que resolvem problemas reais (meu ou de outras pessoas) e tenho planos de
-      me tonar um contribuidor ativo de projetos open source. Também estou
-      começando um {blogLinkElement} documentando coisas que aprendo e que podem
-      ajudar outras pessoas.
-    </p>
+    </>
   );
 };

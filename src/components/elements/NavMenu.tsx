@@ -2,7 +2,6 @@ import React from 'react';
 import { routesList } from '../../constants/routes';
 import { HyperLink } from '../shared/HyperLink';
 import { InteractiveText } from '../shared/InteractiveText';
-import cv from '../../download/gtd.pdf';
 
 export const NavMenu = (): React.ReactElement => {
   return (
@@ -10,7 +9,7 @@ export const NavMenu = (): React.ReactElement => {
       {routesList.map(route => (
         <li key={route.url} className="uppercase text-xs">
           <HyperLink link={route} activeClassName="font-bold">
-            {route.caption}
+            <InteractiveText>{route.caption}</InteractiveText>
           </HyperLink>
         </li>
       ))}
