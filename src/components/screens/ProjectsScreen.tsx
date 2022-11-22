@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Project } from '../../types/Project';
 import { ProjectsList } from '../elements/ProjectsList';
 import { PageLayout } from '../layout/PageLayout';
 import { Badge } from '../shared/Badge';
 import { PageHeader } from '../shared/PageHeader';
 import { Row } from '../shared/Row';
-import { projectsSorters, SortBy } from './ProjectScreen/ProjectScreen.helpers';
 
 type ProjectsScreenProps = {
   projects: Project[];

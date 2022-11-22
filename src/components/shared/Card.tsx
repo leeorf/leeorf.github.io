@@ -89,7 +89,12 @@ const CardTitle = (props: CardTitleProps) => {
   );
 };
 
-const CardActions = (props: CardTitleProps) => {
+type CardActionsProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+const CardActions = (props: CardActionsProps) => {
   const { children, className } = props;
 
   const classes = classNames(className, {

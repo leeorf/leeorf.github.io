@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaGithub, FaPlay } from 'react-icons/fa';
-import { Link } from '../../types/Link';
 import { Project } from '../../types/Project';
 import { idFromSetence } from '../../utils';
 import { Button } from '../shared/Button';
