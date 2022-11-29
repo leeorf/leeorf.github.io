@@ -6,7 +6,7 @@ export const NotFoundScreen = (): React.ReactElement => {
   return (
     <PageLayout>
       <SEO title="Página não encontrada" description="Página não encontrada" />
-      <h1>Not found</h1>
+      <h1>Página não encontrada.</h1>
     </PageLayout>
   );
 };
