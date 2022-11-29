@@ -20,5 +20,5 @@ export const useFluidCover = (props: UseFuildCoverProps) => {
     return undefined;
   }
 
-  return getImage(foundNode);
+  return getImage(foundNode.childImageSharp);
 };
