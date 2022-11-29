@@ -7,6 +7,7 @@ import {
   windowNameSeparator,
 } from '../../constants/siteMeta';
 import { OgType } from '../../types/OpenGraph';
+import { isBrowser } from '../../utils';
 
 type SEOProps = {
   title: string;
@@ -25,7 +26,7 @@ export const SEO = (props: SEOProps): React.ReactElement => {
     imagePath = siteImagePath,
   } = props;
 
-  const { pathname } = window.location;
+  const pathname = isBrowser() ? window.location.pathname : '';
 
   const extendedTitle = `${windowNamePrefix} ${windowNameSeparator} ${title}`;
 
