@@ -35,3 +35,5 @@ export const dateString = (
 
   return `${month}${separator}${day}${year}`;
 };
+
+export const isBrowser = () => typeof window !== 'undefined';
