@@ -4,9 +4,9 @@ import { SocialLink } from './SocialLink';
 import { Tag } from './Tag';
 
 export type Profile = {
-  firstName?: string;
+  firstName: string;
   lastName?: string;
-  position?: string;
+  position: string;
   avatar?: Image;
   summary?: string[];
   socialLinks?: SocialLink[];
