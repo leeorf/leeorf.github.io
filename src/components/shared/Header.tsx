@@ -5,7 +5,7 @@ import { InteractiveText } from './InteractiveText';
 
 export const Header = () => {
   return (
-    <header className="flex items-center w-full space-x-12">
+    <header className="flex items-center w-full space-x-12 justify-between sm:justify-start">
       <InteractiveText>
         <Logo />
       </InteractiveText>
