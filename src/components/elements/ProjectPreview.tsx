@@ -52,7 +52,7 @@ export const ProjectPreview = (
   const sourceCodeLink =
     project.srcUrl && !project.archived ? (
       <Button startAdornment={<FaGithub />} link={project.srcUrl}>
-        Source Code
+        Repo
       </Button>
     ) : null;
 

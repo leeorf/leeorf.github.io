@@ -44,7 +44,9 @@ export const Expander = (props: ExpanderProps): React.ReactElement | null => {
           setExpanded(!expanded);
         }}
       >
-        <InteractiveText>{expanded ? '- less' : '+ more'}</InteractiveText>
+        <InteractiveText>
+          {expanded ? '- ver menos' : '+ ver mais'}
+        </InteractiveText>
       </button>
     </li>
   ) : null;
