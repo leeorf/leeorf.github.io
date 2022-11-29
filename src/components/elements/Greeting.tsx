@@ -21,7 +21,7 @@ export const Greeting = (): React.ReactElement => {
       confortáveis para desenvolver), performance e prezo muito por manter uma
       codebase organizada e que seja fácil de manter e evoluir. No meu tempo
       livre (normalmente 2-3 horas pela noite) desenvolvo {projectsLinkElement}{' '}
-      que resolvem problemas reais (meu ou de outras pessoas) ou me ajudam a
+      que resolvem problemas reais (meu ou de outras pessoas) e/ou me ajudam a
       entender conceitos que venho estudando. Também tenho planos de me tonar um
       contribuidor ativo de projetos open source.
     </p>

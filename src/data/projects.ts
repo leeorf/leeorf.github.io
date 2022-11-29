@@ -3,8 +3,8 @@ import { Project } from '../types/Project';
 export const projects: Project[] = [
   {
     id: 'secret-hash',
-    name: '#️⃣ Secret Hash Chrome Extension',
-    summary: ['Extensão do Chrome para gerar hash a partir de texto.'],
+    name: '#️⃣ Secret Hash',
+    summary: ['Extensão do Chrome para gerar um hash a partir de um texto.'],
     srcUrl: {
       url: 'https://github.com/leeorf/secret-hash-chrome-extesion',
     },
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     id: 'leeorf-dev',
     name: '👨🏾‍💻 leeorf.dev',
     summary: [
-      'Meu webiste pessoal com uma lista de projetos e posts sobre carreira, vida e desenvolvimento web e tecnologia.',
+      'Meu webiste pessoal com uma lista de projetos e posts sobre carreira, vida, desenvolvimento web e tecnologia.',
     ],
     srcUrl: {
       url: 'https://github.com/leeorf/leeorf.github.io',
