@@ -1,10 +1,9 @@
 import type { GatsbyConfig } from 'gatsby';
 
+import { siteMetadata } from './src/data/siteMetadata';
+
 const config: GatsbyConfig = {
-  siteMetadata: {
-    title: `leeorf.dev`,
-    siteUrl: `https://www.yourdomain.tld`,
-  },
+  siteMetadata,
   graphqlTypegen: true,
   plugins: [
     /**
