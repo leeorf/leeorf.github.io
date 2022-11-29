@@ -1,3 +1,4 @@
+import { siteURL } from '../constants/siteMeta';
 import { Project } from '../types/Project';
 
 export const projects: Project[] = [
@@ -38,7 +39,7 @@ export const projects: Project[] = [
       url: 'https://github.com/leeorf/leeorf.github.io',
     },
     demoUrl: {
-      url: 'https://leeorf.github.io/',
+      url: siteURL,
     },
     cover: {
       srcPath: 'projects/leeorf-dev/cover.png',
