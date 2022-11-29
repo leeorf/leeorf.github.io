@@ -16,7 +16,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages --dist ./public --branch public"
   },
   "dependencies": {
     "classnames": "^2.3.2",
@@ -49,6 +51,7 @@
     "gatsby-plugin-sharp": "^4.24.0",
     "gatsby-source-filesystem": "^4.24.0",
     "gatsby-transformer-sharp": "^4.24.0",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.18",
     "prettier": "^2.7.1",
     "prettier-config-belialuin": "^1.2.0",
